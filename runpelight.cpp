@@ -120,7 +120,7 @@ unsigned char rawData[37376] = {
 int main()
 {
 	DWORD fileSize = 0;
-	char* rawData = CreateBuffFromFileA(L"Tcpview.exe", &fileSize);
+	char* rawData = CreateBuffFromFileA(L"Mbox.exe", &fileSize);
 	RunPortableExecutable(rawData); // run executable from the array
 	free(rawData);
 	//getchar();
